@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Malayalam Sentiment Analyzer</title>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: 40px auto; }
+        input[type="text"] { width: 100%; padding: 10px; font-size: 16px; }
+        button { padding: 10px 20px; margin-top: 10px; }
+        .result { margin-top: 20px; font-size: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>Malayalam Sentiment Analyzer</h2>
+    <form method="post">
+        <input type="text" name="input_text" value="{{ input_text }}" placeholder="Enter Malayalam sentence here" required>
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if prediction %}
+    <div class="result">Prediction: {{ prediction }}</div>
+    {% endif %}
+</body>
+</html>
