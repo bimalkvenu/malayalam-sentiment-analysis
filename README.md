@@ -30,20 +30,21 @@ from train import train_model
 train_model(data_path="data/malayalam_reviews.csv")
 
 📂 Project Structure
-├── data/                   
+├── data/                    # Annotated datasets
 │   ├── malayalam_tweets.csv
 │   └── preprocessed/
-├── models/          
+├── models/                  # Saved models
 │   └── svm.pkl
-├── notebooks/
+├── notebooks/               # Jupyter notebooks
 │   ├── EDA.ipynb
 │   └── Model_Training.ipynb
 ├── src/
-│   ├── preprocess.py        # Text cleaningt
+│   ├── preprocess.py        # Text cleaning
 │   ├── train.py             # Model training
 │   └── predict.py           # Inference
 ├── app.py                   # Flask API
 └── requirements.txt
+
 
 
 📊 Results
